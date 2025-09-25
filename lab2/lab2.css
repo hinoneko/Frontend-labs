@@ -37,13 +37,13 @@
 }
 
 .clock.position .dot.left {
-    top: 86px;
-    left: 8px;
+    top: 84px;
+    left: 10px;
 }
 
 .clock.position .dot.right {
-    top: 86px;
-    right: 8px;
+    top: 84px;
+    right: 10px;
 }
 
 .clock.transform .dot.top {
