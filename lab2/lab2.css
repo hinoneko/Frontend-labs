@@ -26,28 +26,48 @@
     border-radius: 50%;
 }
 
-.dot.top {
+.clock.position .dot.top {
     top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 94.5px;
 }
 
-.dot.bottom {
+.clock.position .dot.bottom {
     bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 94.5px;
 }
 
-.dot.left {
+.clock.position .dot.left {
+    top: 86px;
     left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.dot.right {
+.clock.position .dot.right {
+    top: 86px;
     right: 8px;
+}
+
+.clock.transform .dot.top {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock.transform .dot.bottom {
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.clock.transform .dot.left {
     top: 50%;
-    transform: translateY(-50%);
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.clock.transform .dot.right {
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
 }
 
 .hand {
