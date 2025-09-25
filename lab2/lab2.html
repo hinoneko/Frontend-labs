@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <title>Сірик Я.О. ІМ-32</title>
+    <meta name="description" content="Лабораторна робота №1">
+    <meta name="keywords" content="Frontend, KPI, Lab1, HTML, Siryk">
+    <link rel="stylesheet" href="lab2.css">
+    <style>
+         :root {
+            --color-row1: #078f8f;
+            --color-row2: #f5f507;
+            --text-dark: #000000;
+            --text-light: #ffffff;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background: #fafafa;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        
+        col {
+            width: 12.5%;
+        }
+        
+        td {
+            border: 1px solid #333;
+            padding: 12px 8px;
+            text-align: center;
+            vertical-align: middle;
+            word-wrap: break-word;
+            height: 30px;
+        }
+        
+        tr:first-child td {
+            background-color: var(--color-row1);
+            color: var(--text-light);
+            font-weight: 700;
+        }
+        
+        tr:nth-child(2) td {
+            background-color: var(--color-row2);
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+        
+        tr:first-child:hover td {
+            background-color: var(--color-row2);
+            color: var(--text-dark);
+        }
+        
+        tr:nth-child(2):hover td {
+            background-color: var(--color-row1);
+            color: var(--text-light);
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2"> Сірик</td>
+            <td>Яна</td>
+            <td>Олександрівна</td>
+        </tr>
+        <tr>
+            <td>ІМ-32</td>
+            <td>ЛР-2 Варіант 7</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="clocks-container">
+        <div class="clock-wrapper">
+            <div class="clock position">
+                <div class="dot top"></div>
+                <div class="dot bottom"></div>
+                <div class="dot left"></div>
+                <div class="dot right"></div>
+                <div class="hand minute"></div>
+                <div class="hand hour"></div>
+            </div>
+            <div class="clock-label">Position метод</div>
+        </div>
+
+        <div class="clock-wrapper">
+            <div class="clock transform">
+                <div class="dot top"></div>
+                <div class="dot bottom"></div>
+                <div class="dot left"></div>
+                <div class="dot right"></div>
+                <div class="hand minute"></div>
+                <div class="hand hour"></div>
+            </div>
+            <div class="clock-label">Transform метод</div>
+        </div>
+    </div>
+</body>
+
+</html>
