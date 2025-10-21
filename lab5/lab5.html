@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 5 (Варіант 7)</title>
+    <link rel="stylesheet" href="lab5.css">
+</head>
+
+<body>
+    <form id="validationForm" onsubmit="return validateForm(this)">
+        <h2>Форма для заповнення</h2>
+
+        <div class="form-group">
+            <label for="pib">ПІБ:</label>
+            <input type="text" id="pib" name="pib" placeholder="Напр., Іваненко І.І.">
+            <span class="error-message" id="error-pib"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="variant">Варіант:</label>
+            <input type="text" id="variant" name="variant" placeholder="Напр., 57">
+            <span class="error-message" id="error-variant"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" name="phone" placeholder="Напр., (050)-123-45-67">
+            <span class="error-message" id="error-phone"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="faculty">Факультет:</label>
+            <input type="text" id="faculty" name="faculty" placeholder="Напр., ФІОТ">
+            <span class="error-message" id="error-faculty"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адреса:</label>
+            <input type="text" id="address" name="address" placeholder="Напр., м. Київ">
+            <span class="error-message" id="error-address"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Підтвердити</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h2>Інтерактивна таблиця 6x6</h2>
+    <label for="colorPicker">Виберіть колір</label>
+    <input type="color" id="colorPicker" value="#007bff">
+    <div id="tableContainer"></div>
+
+    <script src="lab5.js"></script>
+</body>
+
+</html>
