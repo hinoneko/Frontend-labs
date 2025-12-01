@@ -90,3 +90,45 @@
 .projects__arrow--right { 
   right: -20px; 
 }
+
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 30px 0;
+  }
+
+  .projects::before {
+    height: calc(100% - 60px);
+  }
+
+  .projects__h3 {
+    font-size: 20px;
+  }
+
+  .projects__track {
+    padding: 0 40px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .pCard img {
+    height: 250px;
+  }
+
+  .projects__arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .projects__arrow--left {
+    left: 5px;
+  }
+
+  .projects__arrow--right {
+    right: 5px;
+  }
+}

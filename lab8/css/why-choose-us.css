@@ -2,13 +2,13 @@
   position: relative;
   background: transparent;
   margin-top: 60px;
-  padding: 70px 40;
+  padding: 0 40px;
 }
 
 .why::before{
   content:"";
   position:absolute;
-  top:30;
+  top:30px;
   left:50%;
   transform: translateX(-50%);
   width: min(1400px);
@@ -99,4 +99,43 @@
   font-size: 15px;
   color: rgba(255,255,255,.62);
   margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .why {
+    margin-top: 30px;
+    padding: 40px 0;
+  }
+
+  .why::before {
+    top: 0;
+    width: 100%;
+  }
+
+  .why__block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .why__photo {
+    transform: translateY(0);
+  }
+
+  .why__photo img {
+    height: 300px;
+  }
+
+  .why__panel {
+    padding: 0 20px 20px;
+  }
+
+  .why__h3 {
+    font-size: 20px;
+  }
+
+  .whyItem__icon {
+    width: 50px;
+    height: 50px;
+  }
 }

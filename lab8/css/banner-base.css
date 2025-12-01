@@ -93,3 +93,30 @@
 .dot.is-active { 
   background: var(--orange); 
 }
+
+
+@media (max-width: 600px) {
+  .banner-base__slide {
+    height: 400px;
+  }
+
+  .banner-base__title {
+    font-size: 24px;
+    white-space: normal;
+    padding: 0 20px;
+  }
+
+  .banner-base__arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .banner-base__arrow--left {
+    left: 5px;
+  }
+
+  .banner-base__arrow--right {
+    right: 5px;
+  }
+}

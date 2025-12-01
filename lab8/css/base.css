@@ -43,3 +43,9 @@ button {
   width: min(var(--container), calc(100% - 56px));
   margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: min(var(--container), calc(100% - 32px));
+  }
+}

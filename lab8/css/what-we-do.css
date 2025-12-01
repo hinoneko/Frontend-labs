@@ -70,3 +70,25 @@
   color: var(--muted);
   line-height: 1.6;
 }
+
+
+@media (max-width: 600px) {
+  .what {
+    padding: 30px 0;
+  }
+
+  .what__title {
+    margin-bottom: 30px;
+  }
+
+  .what__h2 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .what__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+}
