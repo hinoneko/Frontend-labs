@@ -1,0 +1,72 @@
+
+.what {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.what__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.what__kicker {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.what__h2 {
+  font-size: 25px;
+  line-height: 1.25;
+  color: #0b1220;
+}
+
+.what__h2 span { 
+  color: var(--orange); 
+}
+
+.what__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 12px;
+}
+
+.service {
+  position: relative;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 26px 18px 22px;
+  min-height: 190px;
+}
+
+.service__num {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  color: #d6dbe4;
+  font-weight: 700;
+}
+
+.service__icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.service__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b1220;
+  margin-bottom: 8px;
+}
+
+.service__desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+}

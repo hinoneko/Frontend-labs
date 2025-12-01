@@ -1,0 +1,95 @@
+.banner-base { 
+  background: #fff; 
+  padding: 0 0 38px; 
+}
+
+.banner-base__wrap {
+  position: relative;
+}
+
+.banner-base__slide {
+  position: relative;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.banner-base__slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0.25));
+}
+
+.banner-base__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+
+.banner-base__title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.banner-base__title span { 
+  color: var(--orange); 
+}
+
+.banner-base__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px; 
+  height: 42px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.banner-base__arrow--left { 
+  left: -18px; 
+}
+
+.banner-base__arrow--right { 
+  right: -18px; 
+}
+
+.banner-base__dots {
+  position: absolute;
+  left: 0; 
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.dot {
+  width: 16px; 
+  height: 3px;
+  background: rgba(255,255,255,0.55);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.is-active { 
+  background: var(--orange); 
+}

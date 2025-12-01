@@ -1,0 +1,110 @@
+.quote { 
+  background: #fff; 
+  padding: 58px 0; 
+}
+
+.quote__block {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 46px;
+  align-items: center;
+}
+
+.quote__man {
+  display: flex;
+  justify-content: center;
+  transform: translateY(58px);
+}
+
+.quote__man img {
+  width: 320px;
+  height: auto;
+  object-fit: contain;
+}
+
+.quote__form {
+  background: #0b0f17;
+  padding: 30px;
+  color: #fff;
+}
+
+.quote__kicker {
+  color: #ffb39a;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.quote__h3 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.quote__h3 b {
+  color: var(--orange);
+}
+
+.qForm { 
+  display: grid; 
+  gap: 14px; 
+}
+
+.qForm__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.qInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  padding: 10px 2px;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+}
+
+.qForm__bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: end;
+  margin-top: 14px;
+}
+
+.qTextarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  padding: 10px 2px;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  height: 120px;
+  min-height: 120px;
+}
+
+.qTextarea::placeholder { 
+  color: rgba(255,255,255,0.55); 
+}
+
+.qBtn {
+  width: 170px;
+  height: 34px;
+  border: 0;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  align-self: end;
+}
+
+.qBtn:hover {
+  opacity: 0.9;
+}
