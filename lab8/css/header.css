@@ -81,15 +81,38 @@
 
 @media (max-width: 600px) {
   .topbar__row {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 10px 0;
+    align-items: flex-start;
+  }
+
+  .brand__logo {
+    height: 90px;
+    padding-top: 35px
   }
 
   .topbar__meta {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     align-items: flex-start;
+  }
+
+  .meta {
+    gap: 10px;
+  }
+
+  .meta__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .meta__title {
+    font-size: 13px;
+  }
+
+  .meta__sub {
+    font-size: 12px;
   }
 
   .nav__bar {
